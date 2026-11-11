@@ -1,0 +1,12 @@
+{
+  "name": "agent-browser-plugin",
+  "version": "0.1.0",
+  "description": "Browser automation MCP tools powered by agent-browser.",
+  "author": {
+    "name": "ririnto"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ririnto/agent-browser-plugin",
+  "repository": "https://github.com/ririnto/agent-browser-plugin",
+  "mcpServers": "./.mcp.json"
+}
