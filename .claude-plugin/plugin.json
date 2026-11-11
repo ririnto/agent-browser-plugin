@@ -1,6 +1,6 @@
 {
   "name": "agent-browser-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browser automation MCP tools powered by agent-browser.",
   "author": {
     "name": "ririnto"
