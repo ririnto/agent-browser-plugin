@@ -1,0 +1,20 @@
+{
+  "name": "agent-browser-plugin",
+  "interface": {
+    "displayName": "Agent Browser MCP"
+  },
+  "plugins": [
+    {
+      "name": "agent-browser-plugin",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development"
+    }
+  ]
+}

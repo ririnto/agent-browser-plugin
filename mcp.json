@@ -3,8 +3,9 @@
   "mcpServers": {
     "agent-browser": {
       "type": "stdio",
-      "command": "bunx",
+      "command": "bun",
       "args": [
+        "x",
         "agent-browser",
         "mcp"
       ],

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "agent-browser-plugin",
+  "owner": {
+    "name": "ririnto"
+  },
+  "plugins": [
+    {
+      "name": "agent-browser-plugin",
+      "source": "./",
+      "description": "Browser automation MCP tools powered by agent-browser."
+    }
+  ],
+  "description": "Install the Agent Browser MCP plugin."
+}
