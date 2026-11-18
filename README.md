@@ -4,7 +4,7 @@ Automate a browser through the upstream [Agent Browser](https://github.com/verce
 
 ## Runtime
 
-Install Bun with `bunx` on PATH and Node.js 22.19+ on 22.x or 24.6+ on 24.x, or a newer supported major. The plugin runs `bunx agent-browser mcp` with system certificate support.
+Install Bun with `bun` on PATH and Node.js 22.19+ on 22.x or 24.6+ on 24.x, or a newer supported major. The plugin runs `bun x agent-browser mcp` with system certificate support.
 Follow the [upstream browser setup](https://github.com/vercel-labs/agent-browser#installation) before opening your first page.
 
 ## Install
