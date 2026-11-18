@@ -1,11 +1,31 @@
-# agent-browser-plugin
+# Agent Browser MCP
 
-Expose the upstream agent-browser MCP server to Claude Code and Codex.
-The server runs `bunx agent-browser mcp` over stdio and requires Bun on PATH.
-Both host configurations set `NODE_USE_SYSTEM_CA=1` so supported Bun and Node.js runtimes include the operating system certificate authorities while retaining TLS certificate verification.
-Bun respects the package launcher’s Node shebang by default.
-For Node.js system CA support, use Node.js 22.19+, 24.6+, or a later supported release.
-See the [Bun runtime documentation](https://bun.com/docs/runtime/environment-variables) and [Node.js CLI documentation](https://nodejs.org/api/cli.html#node_use_system_ca1).
+Automate a browser through the upstream [Agent Browser](https://github.com/vercel-labs/agent-browser) MCP server.
 
-Install `agent-browser-plugin@sinon` through the host plugin manager.
-See the [upstream documentation](https://github.com/vercel-labs/agent-browser) for browser installation and usage.
+## Runtime
+
+Install Bun with `bunx` on PATH and Node.js 22.19+ on 22.x or 24.6+ on 24.x, or a newer supported major. The plugin runs `bunx agent-browser mcp` with system certificate support.
+Follow the [upstream browser setup](https://github.com/vercel-labs/agent-browser#installation) before opening your first page.
+
+## Install
+
+### Claude Code
+
+```sh
+claude plugin marketplace add ririnto/agent-browser-plugin
+claude plugin install agent-browser-plugin@agent-browser-plugin
+```
+
+### Codex
+
+```sh
+codex plugin marketplace add ririnto/agent-browser-plugin
+codex plugin add agent-browser-plugin@agent-browser-plugin
+```
+
+If you already use the Sinon marketplace in either client, install `agent-browser-plugin@sinon`.
+
+### Cursor
+
+In **Customize**, choose **From GitHub Repository**, enter `https://github.com/ririnto/agent-browser-plugin`, and install **Agent Browser MCP**.
+Start a new Agent conversation after installation.

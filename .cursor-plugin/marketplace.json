@@ -1,0 +1,13 @@
+{
+  "name": "agent-browser-plugin",
+  "owner": {
+    "name": "ririnto"
+  },
+  "plugins": [
+    {
+      "name": "agent-browser-plugin",
+      "source": "./",
+      "description": "Browser automation MCP tools powered by agent-browser."
+    }
+  ]
+}
