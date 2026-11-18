@@ -1,6 +1,6 @@
 {
   "name": "agent-browser-plugin",
-  "version": "2026.11.20",
+  "version": "2026.11.19.01",
   "description": "Browser automation MCP tools powered by agent-browser.",
   "author": {
     "name": "ririnto"
@@ -8,5 +8,18 @@
   "license": "MIT",
   "homepage": "https://github.com/ririnto/agent-browser-plugin",
   "repository": "https://github.com/ririnto/agent-browser-plugin",
-  "mcpServers": "./mcp.json"
+  "mcpServers": {
+    "agent-browser": {
+      "type": "stdio",
+      "command": "bun",
+      "args": [
+        "x",
+        "agent-browser",
+        "mcp"
+      ],
+      "env": {
+        "NODE_USE_SYSTEM_CA": "1"
+      }
+    }
+  }
 }
